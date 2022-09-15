@@ -1,0 +1,74 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.header-bg {
+  background-color: v.$color-black;
+}
+
+.header {
+  @include m.flex(2rem);
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+
+  &__logo {
+    min-width: max-content;
+  }
+}
+
+.header__menu {
+  @include m.flex(4rem);
+
+  @include m.d(md) {
+    gap: 2rem;
+  }
+
+  @include m.d(sm) {
+    gap: 1.2rem;
+  }
+}
+
+.header__menu a {
+  display: inline-block;
+  padding: 1.6rem 0;
+  position: relative;
+
+  @include m.d(md) {
+    background-color: v.$color-grey-dark-6;
+    padding: 1.2rem 1.6rem;
+    border-radius: v.$border-radius;
+  }
+
+  @include m.d(sm) {
+    padding: 0.8rem 1.2rem;
+    font-size: 1.4rem;
+  }
+}
+
+.header__menu a:hover,
+.header__menu a.ativo {
+  @include m.d(md) {
+    background-color: v.$color-grey-dark-5;
+  }
+}
+
+.header__menu a::after {
+  content: '';
+  background-color: v.$color-white;
+  width: 0px;
+  height: 2px;
+  display: block;
+  margin-top: 4px;
+  position: absolute;
+  transition: 0.3s;
+
+  @include m.d(md) {
+    display: none;
+  }
+}
+
+.header__menu a:hover::after,
+.header__menu a.ativo::after {
+  width: 100%;
+}

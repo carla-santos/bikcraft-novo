@@ -1,0 +1,74 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.cor-0 {
+  color: v.$color-white;
+}
+
+.cor-1 {
+  color: v.$color-grey-light-1;
+}
+
+.cor-2 {
+  color: v.$color-grey-light-2;
+}
+
+.cor-3 {
+  color: v.$color-grey-light-3;
+}
+
+.cor-4 {
+  color: v.$color-grey-light-4;
+}
+
+.cor-5 {
+  color: v.$color-grey-light-5;
+}
+
+.cor-6 {
+  color: v.$color-grey-dark-1;
+}
+
+.cor-7 {
+  color: v.$color-grey-dark-2;
+}
+
+.cor-8 {
+  color: v.$color-grey-dark-3;
+}
+
+.cor-9 {
+  color: v.$color-grey-dark-4;
+}
+
+.cor-10 {
+  color: v.$color-grey-dark-5;
+}
+
+.cor-11 {
+  color: v.$color-grey-dark-6;
+}
+
+.cor-12 {
+  background-color: v.$color-black;
+}
+
+.cor-p1 {
+  color: v.$color-primary;
+}
+
+.cor-p2 {
+  color: v.$color-primary-light-1;
+}
+
+.cor-p3 {
+  color: v.$color-primary-light-2;
+}
+
+.cor-p4 {
+  color: v.$color-primary-dark-1;
+}
+
+.cor-p5 {
+  color: v.$color-primary-dark-2;
+}

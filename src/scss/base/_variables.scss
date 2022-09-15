@@ -1,0 +1,42 @@
+// Cores
+$color-primary: #ffbb00;
+$color-primary-light-1: #e4a30b;
+$color-primary-light-2: #a66f00;
+$color-primary-dark-1: #664400;
+$color-primary-dark-2: #332200;
+
+$color-grey-light-1: #f7f7f7;
+$color-grey-light-2: #ededed;
+$color-grey-light-3: #dedede;
+$color-grey-light-4: #cccccc;
+$color-grey-light-5: #b2b2b2;
+
+$color-grey-dark-1: #9c9c9c;
+$color-grey-dark-2: #717171;
+$color-grey-dark-3: #595959;
+$color-grey-dark-4: #404040;
+$color-grey-dark-5: #2e2e2e;
+$color-grey-dark-6: #111111;
+
+$color-white: #ffffff;
+$color-black: #000000;
+
+// Tipografia
+$font-size-base: 62.5%;
+
+// Bordas
+$border-radius-50: 50%;
+$border-radius: 0.4rem;
+
+// Media queries
+$devices: (
+  'sm': 576px,
+  'md': 768px,
+  'lg': 992px,
+  'xl': 1200px,
+  'xxl': 1400px,
+);
+
+// Grid
+$max-width-container: 120rem;
+$grid-gutter: 2rem;

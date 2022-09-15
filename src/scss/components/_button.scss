@@ -1,0 +1,33 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+%btn {
+  border: none;
+  border-radius: v.$border-radius;
+  cursor: pointer;
+  text-align: center;
+  display: inline-block;
+  padding: 1.6rem 3.2rem;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+  max-width: max-content;
+  text-transform: uppercase;
+}
+
+.btn {
+  &,
+  &:link,
+  &:visited {
+    @extend %btn;
+  }
+
+  &:hover,
+  &:active {
+    background: linear-gradient(#ffb60d, #e59317);
+  }
+
+  &--primary {
+    background: linear-gradient(180deg, #ffbf00 0%, #f2a50c 100%);
+    color: v.$color-primary-dark-2;
+    font: 600 1.8rem/1.35 'Poppins', sans-serif;
+  }
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Bicicletas elétricas de alta precisão e qualidade,  feitas sob medida para o cliente. Explore o mundo na sua velocidade com a Bikcraft.">
+  <title>Bikcraft - Bicicletas Elétricas</title>
+  <!--------------- Favicon  ------------->
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <!------------- Google fonts  ------------>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&family=Poppins:wght@500;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <!------------- Estilos  ------------>
+  <link rel="prefetch" href="index.html" as="document">
+  <link rel="preload" href="build/css/main.css" as="style">
+  <link rel="stylesheet" href="build/css/main.css">
+  <!------------- Javascript ------------>
+  <script defer src="build/js/script.js"></script>
+</head>
+
+<body id="home">
+  <header class="header-bg">
+    <div class="header container">
+      <a href="./">
+        <img class="header__logo" src="./build/img/bikcraft.svg" alt="Bikcraft" width="136" height="32">
+      </a>
+      <nav class="header__nav" aria-label="primaria">
+        <ul class="header__menu font-1-m cor-0">
+          <li><a href="./bicicletas.html">Bicicletas</a></li>
+          <li><a href="./seguros.html">Seguros</a></li>
+          <li><a href="./contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="hero-bg">
+    <div class="hero container">
+      <div class="hero__content-box">
+        <h1 class="font-1-xxl cor-0 hero__title">
+          Bicicletas feitas sob medida
+          <span class="cor-p1">.</span>
+        </h1>
+        <p class="font-2-l cor-5 hero__description">
+          Bicicletas elétricas de alta precisão e qualidade, feitas sob medida para o cliente. Explore o mundo na sua velocidade com a Bikcraft.
+        </p>
+        <a class="btn btn--primary" href="./bicicletas.html">Escolha a sua</a>
+      </div>
+
+      <picture class="hero__img">
+        <source media="(max-width: 768px)" srcset="./build/img/bicicletas/nimbus.avif" type="image/avif">
+        <source media="(max-width: 768px)" srcset="./build/img/bicicletas/nimbus.webp" type="image/webp">
+        <source media="(max-width: 768px)" srcset="./build/img/bicicletas/nimbus.jpg" type="image/jpeg">
+        <img src="./build/img/fotos/introducao.jpg" width="640" height="800">
+      </picture>
+    </div>
+  </main>
+
+</body>
+
+</html>
